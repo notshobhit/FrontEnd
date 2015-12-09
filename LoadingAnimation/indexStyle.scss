@@ -1,14 +1,17 @@
+//The background color:
 $bg-color: #ececec;
 
+//dot dimensions, minimum and maximum:
 $dot-size: 20px;
 $frame-side-length: 200px;
 
+//dot colors:
 $green-dot-color: #3eb991;
 $pink-dot-color: #e01563;
 $yellow-dot-color: #e9a820;
 $blue-dot-color: #6ecadc;
 
-
+//rotation of whole frame by an angle:
 $angle-rotate: -20deg;
 
 body{
