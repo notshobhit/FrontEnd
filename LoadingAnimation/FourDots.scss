@@ -1,6 +1,3 @@
-//The background color:
-$bg-color: #ececec;
-
 //dot dimensions, minimum and maximum:
 $dot-size: 20px;
 $frame-side-length: 200px;
@@ -13,11 +10,6 @@ $blue-dot-color: #6ecadc;
 
 //rotation of whole frame by an angle:
 $angle-rotate: -20deg;
-
-body{
-	background-color: $bg-color;
-	margin: 0;
-}
 
 div#contain-1{
 	position: relative;
