@@ -1,0 +1,137 @@
+//container properties:
+$container-width: 100px;
+$container-height: 50px;
+
+//dot properties:
+$dot-dia: 15px;
+
+//colors:
+$green: #36a100;
+$yellow: #fdff00;
+$red: #ff0000;
+
+$time-period: 1s;
+
+div#contain-3{
+  margin: 300px auto;
+  width: $container-width;
+  height: $container-height;
+  position: relative;
+}
+
+div.dot-3{
+  position: absolute;
+  top: ($container-height/2 - $dot-dia/2);
+  width: $dot-dia;
+  height: $dot-dia;
+  border-radius: ($dot-dia/2);
+}
+
+div.dot-3-a{
+  left: -$dot-dia/2;
+  background-color: $green;
+  animation: green-dot-animation-vertical $time-period infinite ease-in-out, green-dot-animation-horizontal $time-period infinite linear;
+}
+
+div.dot-3-b{
+  left: ($container-width/2 - $dot-dia/2);
+  background-color: $yellow;
+  animation: yellow-dot-animation-vertical $time-period infinite ease-in-out, yellow-dot-animation-horizontal $time-period infinite linear;
+}
+
+div.dot-3-c{
+  left: ($container-width - $dot-dia/2);
+  background-color: $red;
+  animation: red-dot-animation-vertical $time-period infinite ease-in-out, red-dot-animation-horizontal $time-period infinite linear;
+}
+
+
+
+
+@keyframes green-dot-animation-vertical{
+  0%, 40%, 50%, 90%, 100%{
+    top: ($container-height/2 - $dot-dia/2);
+  }
+
+  10%, 60%{
+    top: (0-$dot-dia/2);
+  }
+
+  30%, 80%{
+    top: ($container-height - $dot-dia/2);
+  }
+}
+
+@keyframes green-dot-animation-horizontal{
+  0%, 90%, 100%{
+    left: -$dot-dia/2;
+  }
+
+  40%, 50%{
+    left: ($container-width - $dot-dia/2);
+  }
+
+
+}
+
+
+
+@keyframes yellow-dot-animation-vertical{
+  0%, 20%, 30%, 70%, 80%, 100%{
+    top: ($container-height/2 - $dot-dia/2);
+  }
+
+  10%, 60%{
+    top: ($container-height - $dot-dia/2);
+  }
+
+  40%, 90%{
+    top: -$dot-dia/2;
+  }
+}
+
+@keyframes yellow-dot-animation-horizontal{
+  0%{
+    left: $container-width/2 - $dot-dia/2;
+  }
+
+  20%, 30%{
+    left: -$dot-dia/2;
+  }
+
+  70%, 80%{
+    left: ($container-width - $dot-dia/2);
+  }
+
+  100%{
+    left: ($container-width/2 - $dot-dia/2);
+  }
+
+}
+
+@keyframes red-dot-animation-vertical{
+
+  0%, 10%, 50%, 60%, 100%{
+    top: ($container-height/2 - $dot-dia/2);
+  }
+
+  40%, 90%{
+    top: ($container-height - $dot-dia/2);
+  }
+
+  20%, 70%{
+    top: -$dot-dia/2;
+  }
+}
+
+
+@keyframes red-dot-animation-horizontal{
+
+  50%, 60%{
+    left: -$dot-dia/2;
+  }
+
+  0%, 10%, 100% {
+    left: ($container-width - $dot-dia/2);
+  }
+}

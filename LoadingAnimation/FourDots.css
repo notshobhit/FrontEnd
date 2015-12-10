@@ -2,14 +2,14 @@ body {
   background-color: #ececec;
   margin: 0; }
 
-div#contain {
+div#contain-1 {
   position: relative;
-  margin: 100px auto;
+  margin: 200px auto;
   width: 200px;
   height: 200px;
   transform: rotateZ(-20deg); }
 
-div.dot {
+div.dot-1 {
   position: absolute;
   display: block;
   width: 20px;
@@ -17,25 +17,25 @@ div.dot {
   border-radius: 10px;
   mix-blend-mode: multiply; }
 
-div.dot-a {
+div.dot-1-a {
   top: 0;
   left: 0;
   background-color: #3eb991;
   animation: slack-animation--a 1s infinite; }
 
-div.dot-b {
+div.dot-1-b {
   top: 0;
   right: 0;
   background-color: #e01563;
   animation: slack-animation--b 1s infinite; }
 
-div.dot-c {
+div.dot-1-c {
   bottom: 0;
   left: 0;
   background-color: #e9a820;
   animation: slack-animation--c 1s infinite; }
 
-div.dot-d {
+div.dot-1-d {
   bottom: 0;
   right: 0;
   background-color: #6ecadc;
@@ -82,4 +82,4 @@ div.dot-d {
     bottom: 180px;
     background-color: #e01563; } }
 
-/*# sourceMappingURL=indexStyle.css.map */
+/*# sourceMappingURL=FourDots.css.map */

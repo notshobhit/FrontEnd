@@ -1,0 +1,70 @@
+div#contain-3 {
+  margin: 300px auto;
+  width: 100px;
+  height: 50px;
+  position: relative; }
+
+div.dot-3 {
+  position: absolute;
+  top: 17.5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 7.5px; }
+
+div.dot-3-a {
+  left: -7.5px;
+  background-color: #36a100;
+  animation: green-dot-animation-vertical 1s infinite ease-in-out, green-dot-animation-horizontal 1s infinite linear; }
+
+div.dot-3-b {
+  left: 42.5px;
+  background-color: #fdff00;
+  animation: yellow-dot-animation-vertical 1s infinite ease-in-out, yellow-dot-animation-horizontal 1s infinite linear; }
+
+div.dot-3-c {
+  left: 92.5px;
+  background-color: #ff0000;
+  animation: red-dot-animation-vertical 1s infinite ease-in-out, red-dot-animation-horizontal 1s infinite linear; }
+
+@keyframes green-dot-animation-vertical {
+  0%, 40%, 50%, 90%, 100% {
+    top: 17.5px; }
+  10%, 60% {
+    top: -7.5px; }
+  30%, 80% {
+    top: 42.5px; } }
+@keyframes green-dot-animation-horizontal {
+  0%, 90%, 100% {
+    left: -7.5px; }
+  40%, 50% {
+    left: 92.5px; } }
+@keyframes yellow-dot-animation-vertical {
+  0%, 20%, 30%, 70%, 80%, 100% {
+    top: 17.5px; }
+  10%, 60% {
+    top: 42.5px; }
+  40%, 90% {
+    top: -7.5px; } }
+@keyframes yellow-dot-animation-horizontal {
+  0% {
+    left: 42.5px; }
+  20%, 30% {
+    left: -7.5px; }
+  70%, 80% {
+    left: 92.5px; }
+  100% {
+    left: 42.5px; } }
+@keyframes red-dot-animation-vertical {
+  0%, 10%, 50%, 60%, 100% {
+    top: 17.5px; }
+  40%, 90% {
+    top: 42.5px; }
+  20%, 70% {
+    top: -7.5px; } }
+@keyframes red-dot-animation-horizontal {
+  50%, 60% {
+    left: -7.5px; }
+  0%, 10%, 100% {
+    left: 92.5px; } }
+
+/*# sourceMappingURL=ThreeDots.css.map */

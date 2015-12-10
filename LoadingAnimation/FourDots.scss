@@ -19,15 +19,15 @@ body{
 	margin: 0;
 }
 
-div#contain{
+div#contain-1{
 	position: relative;
-	margin: 100px auto;
+	margin: 200px auto;
 	width: $frame-side-length;
 	height: $frame-side-length;
 	transform: rotateZ($angle-rotate);
 }
 
-div.dot{
+div.dot-1{
 	position: absolute;
 	display: block;
 	width: $dot-size;
@@ -36,7 +36,7 @@ div.dot{
 	mix-blend-mode: multiply;
 }
 
-div.dot-a{
+div.dot-1-a{
 	top:0;
 	left:0;
 	background-color: $green-dot-color;
@@ -44,7 +44,7 @@ div.dot-a{
 }
 
 
-div.dot-b{
+div.dot-1-b{
 	top:0;
 	right:0;
 	background-color: $pink-dot-color;
@@ -52,7 +52,7 @@ div.dot-b{
 }
 
 
-div.dot-c{
+div.dot-1-c{
 	bottom:0;
 	left:0;
 	background-color: $yellow-dot-color;
@@ -60,7 +60,7 @@ div.dot-c{
 }
 
 
-div.dot-d{
+div.dot-1-d{
 	bottom:0;
 	right:0;
 	background-color: $blue-dot-color;

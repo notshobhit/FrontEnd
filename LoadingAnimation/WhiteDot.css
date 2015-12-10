@@ -1,0 +1,33 @@
+div#contain-2 {
+  box-sizing: border-box;
+  margin: 300px auto;
+  padding: 20px;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  animation: rotate-animation 1.5s infinite linear; }
+
+div.dot-2--1 {
+  margin: auto;
+  box-sizing: border-box;
+  padding: 5px;
+  background-color: #ce2a0d;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  animation: rotate-animation 1.5s infinite linear; }
+
+div.dot-2--2 {
+  margin: auto;
+  background-color: #ffffff;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px; }
+
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=WhiteDot.css.map */

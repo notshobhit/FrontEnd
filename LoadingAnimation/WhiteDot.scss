@@ -1,0 +1,60 @@
+//properties of container circle:
+$contain-diameter: 200px;
+$red-color: #ce2a0d;
+
+//first inner dot:
+$inner-dot-dia: 50px;
+$white-color: #ffffff;
+$dist-from-periphery: 20px;
+
+//innermost dot:
+$innermost-dia: 10px;
+$dist-innermost-from-periphery: 5px;
+
+
+//time period of rotation:
+$time-period: 1.5s;
+
+div#contain-2{
+  box-sizing: border-box;
+  margin: 300px auto;
+  padding: $dist-from-periphery;
+  height: $contain-diameter;
+  width: $contain-diameter;
+  border-radius: ($contain-diameter/2);
+  //may add color to make outer container visible:
+  //background-color: $white-color;
+  animation: rotate-animation $time-period infinite linear;
+}
+
+div.dot-2--1{
+  margin: auto;
+  box-sizing: border-box;
+  padding: $dist-innermost-from-periphery;
+  background-color: $red-color;
+  height: $inner-dot-dia;
+  width: $inner-dot-dia;
+  border-radius: ($inner-dot-dia/2);
+  animation: rotate-animation $time-period infinite linear;
+}
+
+div.dot-2--2{
+  margin: auto;
+  background-color: $white-color;
+  height: $innermost-dia;
+  width: $innermost-dia;
+  border-radius: ($innermost-dia/2);
+}
+
+
+
+@keyframes rotate-animation{
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+
+}
