@@ -1,0 +1,44 @@
+@font-face {
+	font-family: "Blogger";
+	src: url(../fonts/BloggerSans.ttf) format("truetype");
+}
+
+
+body{
+	background-color: #fff;
+	margin: 0;
+	font-family: "Blogger";
+}
+
+header {
+	font-weight: 100;
+	font-size: 2em;
+	width: 100%;
+	color: #fff;
+	background-color: #db0084;
+	padding: 50px;
+	margin-bottom: 50px;
+}
+
+div#sect{
+	border-radius: 200px;
+	width: 80%;
+	background-color: #ccc;
+	padding: 30px;
+	margin: auto;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+
+footer{
+	width:100%;
+	margin: auto;
+	background-color: #db0084;
+	color: #fff;
+}
+
+footer #inner-text{
+	width: 80%;
+	margin: auto;
+	padding: 30px;
+}
