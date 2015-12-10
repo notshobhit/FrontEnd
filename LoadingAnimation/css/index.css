@@ -18,6 +18,7 @@ header {
 	background-color: #db0084;
 	padding: 50px;
 	margin-bottom: 50px;
+	box-sizing: border-box;
 }
 
 div#sect{
@@ -41,4 +42,15 @@ footer #inner-text{
 	width: 80%;
 	margin: auto;
 	padding: 30px;
+}
+
+@media screen and (max-width: 1400px){
+	body{
+		background-color: #ccc;
+	}
+
+
+	div#sect{
+		width: 100%;
+	}
 }
