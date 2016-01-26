@@ -21,16 +21,6 @@ header {
 	box-sizing: border-box;
 }
 
-div#sect{
-	border-radius: 200px;
-	width: 80%;
-	background-color: #ccc;
-	padding: 30px;
-	margin: auto;
-	margin-bottom: 20px;
-	box-sizing: border-box;
-}
-
 footer{
 	width:100%;
 	margin: auto;
@@ -42,15 +32,4 @@ footer #inner-text{
 	width: 80%;
 	margin: auto;
 	padding: 30px;
-}
-
-@media screen and (max-width: 1400px){
-	body{
-		background-color: #ccc;
-	}
-
-
-	div#sect{
-		width: 100%;
-	}
 }

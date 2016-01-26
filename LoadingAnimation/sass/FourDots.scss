@@ -7,6 +7,7 @@ $green-dot-color: #3eb991;
 $pink-dot-color: #e01563;
 $yellow-dot-color: #e9a820;
 $blue-dot-color: #6ecadc;
+$container-background: #ffffff;
 
 //rotation of whole frame by an angle:
 $angle-rotate: -20deg;
@@ -16,6 +17,8 @@ div#contain-1{
 	margin: 200px auto;
 	width: $frame-side-length;
 	height: $frame-side-length;
+	background-color: $container-background;
+	//padding: 10px;
 	transform: rotateZ($angle-rotate);
 }
 

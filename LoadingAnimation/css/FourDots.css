@@ -3,6 +3,7 @@ div#contain-1 {
   margin: 200px auto;
   width: 200px;
   height: 200px;
+  background-color: #ffffff;
   transform: rotateZ(-20deg); }
 
 div.dot-1 {
